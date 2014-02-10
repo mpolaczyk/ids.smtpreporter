@@ -70,6 +70,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.toolTipHello = new System.Windows.Forms.ToolTip(this.components);
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.context.SuspendLayout();
             this.tabContainer.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -80,6 +82,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numSmtpPort)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // notify
@@ -452,6 +455,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.groupBox4);
             this.tabPage3.Controls.Add(this.label10);
             this.tabPage3.Controls.Add(this.groupBox3);
             this.tabPage3.Location = new System.Drawing.Point(4, 27);
@@ -468,16 +472,15 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(3, 465);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(182, 18);
+            this.label10.Size = new System.Drawing.Size(0, 18);
             this.label10.TabIndex = 17;
-            this.label10.Text = "Wersja 1.1 z dnia 10.02.2014r";
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.textBox1);
-            this.groupBox3.Location = new System.Drawing.Point(6, 6);
+            this.groupBox3.Location = new System.Drawing.Point(6, 184);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(551, 456);
+            this.groupBox3.Size = new System.Drawing.Size(551, 298);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Licencja";
@@ -492,7 +495,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(538, 413);
+            this.textBox1.Size = new System.Drawing.Size(538, 255);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = resources.GetString("textBox1.Text");
             // 
@@ -506,6 +509,34 @@
             this.timer.Enabled = true;
             this.timer.Interval = 200;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox4.Controls.Add(this.textBox2);
+            this.groupBox4.Location = new System.Drawing.Point(6, 6);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(551, 172);
+            this.groupBox4.TabIndex = 18;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "O programie";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox2.Location = new System.Drawing.Point(7, 25);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox2.Size = new System.Drawing.Size(538, 141);
+            this.textBox2.TabIndex = 1;
+            this.textBox2.Text = "Autor: Marcin Polaczyk\r\nKontakt: http://mpolaczyk.pl/\r\nKod źródłowy: https://gith" +
+    "ub.com/mpolaczyk/ids.smtpreporter\r\nWersja: 1.1\r\nZ dnia: 10.02.2014r";
             // 
             // frmMain
             // 
@@ -541,6 +572,8 @@
             this.tabPage3.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -587,6 +620,8 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TextBox textBox2;
 
     }
 }
