@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Powiadamiacz")]
-[assembly: AssemblyCopyright("IDS Systemy Informatyczne Marcin Polaczyk")]
+[assembly: AssemblyCopyright("Copyright 2014 Marcin Polaczyk mpolaczyk.pl")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -44,7 +44,6 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.cmdRead = new System.Windows.Forms.Button();
             this.cmdSave = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
             this.lblTimer = new System.Windows.Forms.Label();
@@ -65,11 +64,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.toolTipHello = new System.Windows.Forms.ToolTip(this.components);
-            this.timer = new System.Windows.Forms.Timer(this.components);
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.toolTipHello = new System.Windows.Forms.ToolTip(this.components);
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.context.SuspendLayout();
             this.tabContainer.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -203,7 +203,6 @@
             // 
             this.tabPage2.Controls.Add(this.cmdRead);
             this.tabPage2.Controls.Add(this.cmdSave);
-            this.tabPage2.Controls.Add(this.label10);
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Controls.Add(this.groupBox1);
             this.tabPage2.Location = new System.Drawing.Point(4, 27);
@@ -242,16 +241,6 @@
             this.cmdSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.cmdSave.UseVisualStyleBackColor = true;
             this.cmdSave.Click += new System.EventHandler(this.cmdSave_Click);
-            // 
-            // label10
-            // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(3, 465);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(182, 18);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "Wersja 1.1 z dnia 10.02.2014r";
             // 
             // groupBox2
             // 
@@ -461,6 +450,52 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Port:";
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.label10);
+            this.tabPage3.Controls.Add(this.groupBox3);
+            this.tabPage3.Location = new System.Drawing.Point(4, 27);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(563, 488);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Informacje";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(3, 465);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(182, 18);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "Wersja 1.1 z dnia 10.02.2014r";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.textBox1);
+            this.groupBox3.Location = new System.Drawing.Point(6, 6);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(551, 456);
+            this.groupBox3.TabIndex = 0;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Licencja";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Location = new System.Drawing.Point(7, 26);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox1.Size = new System.Drawing.Size(538, 413);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = resources.GetString("textBox1.Text");
+            // 
             // toolTipHello
             // 
             this.toolTipHello.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
@@ -471,39 +506,6 @@
             this.timer.Enabled = true;
             this.timer.Interval = 200;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.groupBox3);
-            this.tabPage3.Location = new System.Drawing.Point(4, 27);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(563, 488);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Informacje";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.textBox1);
-            this.groupBox3.Location = new System.Drawing.Point(6, 6);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(470, 275);
-            this.groupBox3.TabIndex = 0;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Prawa autorskie";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(7, 26);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(457, 243);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // frmMain
             // 
@@ -529,7 +531,6 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numDelay)).EndInit();
@@ -537,6 +538,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numSmtpPort)).EndInit();
             this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
@@ -576,7 +578,6 @@
         private System.Windows.Forms.TextBox txtSmtpUser;
         private System.Windows.Forms.TextBox txtSmtpHost;
         private System.Windows.Forms.Button cmdSmtpTest;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button cmdRead;
         private System.Windows.Forms.Button cmdSave;
         private System.Windows.Forms.Timer timer;
@@ -585,6 +586,7 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label10;
 
     }
 }

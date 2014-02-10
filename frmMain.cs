@@ -345,10 +345,6 @@ namespace ids.smtpreport
             SmallTick();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         
     }
