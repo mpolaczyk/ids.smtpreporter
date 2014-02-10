@@ -25,8 +25,13 @@ This tool is created to send notifications via smtp.
  - In public ip check tab, hit test to initialize cycle.
 
 **Sample SMTP configuration:**
-Server: smtp.googlemail.com
-Port: 587
-User: <login to your google account, this account will be used as sender>
-Pass: <pass to your google account>
-Receiver: <this is a destination address, he will receive reports>
+
+Server: *smtp.googlemail.com*
+
+Port: *587*
+
+User: *login to your google account, this account will be used as sender*
+
+Pass: *pass to your google account*
+
+Receiver: *this is a destination address, he will receive reports*
